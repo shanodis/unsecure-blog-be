@@ -1,0 +1,16 @@
+package me.project.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.UUID;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class CommentListResponse {
+    private UUID commentId;
+    private String commentText;
+    private String createdBy;
+}
