@@ -5,6 +5,6 @@ public class AuthPathConfig {
             "/login/**",
             "/api/comments",
 //            HACKABLE
-//            "/api/users"
+            "/api/users"
     };
 }

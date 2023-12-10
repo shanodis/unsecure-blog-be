@@ -23,14 +23,14 @@ public class MyUserController {
     }
 
     // HACKABLE
-//    @GetMapping
-//    public MyUser createMyUser(
-//            @RequestParam String username,
-//            @RequestParam String password,
-//            @RequestParam AppUserRole role
-//    ) {
-//        return myUserService.createMyUser(username, password, role);
-//    }
+    @GetMapping
+    public MyUser createMyUser(
+            @RequestParam String username,
+            @RequestParam String password,
+            @RequestParam AppUserRole role
+    ) {
+        return myUserService.createMyUser(username, password, role);
+    }
 
     // SECURED
     @Secured({"ROLE_ADMIN"})
